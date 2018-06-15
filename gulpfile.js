@@ -9,21 +9,21 @@ var gulp              =   require('gulp'),
     notify            =   require('gulp-notify');
     var paths = {
       cssPaths: {
-        src: '/assets/css/*.scss',
-        dest: '/assets/dest/'
+        src: './static/css/*.scss',
+        dest: './static/dest/'
       }
     };
 
 gulp.task('styles', function () {
   return gulp.src(paths.cssPaths.src)
-    //.pipe(sourcemaps.init())
+    .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(cleanCSSMinify())
     .pipe(rename({
       basename: 'main',
       suffix: '.min'
     }))
-    //.pipe(sourcemaps.write('/maps'))
+    .pipe(sourcemaps.write('/maps'))
     .pipe(gulp.dest(paths.cssPaths.dest));
 });
 

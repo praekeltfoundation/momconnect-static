@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body  {
+  background-color: #213d55;
+  line-height: 1.5;
+  position: relative;
+}
+
+body {
+  background: #ffffff;
+  color: #213d55;
+  font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 40em;
+  overflow: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+h1 {
+  font-size: 2em;
+}
+h2, h3 {
+  font-size: 1.5em;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+.ContentBody {
+  font-weight: 300;
+  overflow: auto;
+}
+.Paper {
+  &-body {
+    text-align: left;
+  }
+  &-header {
+    padding: 25px;
+    background-color: #c0d6dd;
+    border-bottom: #dae8eb;
+  }
+  &-copy {
+    padding: 16px 32px;
+  }
+  &-headline {
+    color: #2d9ec5;
+    font-size: 1.750em;
+    margin: 32px 0 10px;
+  }
+  &-lead {
+    font-size: 1.250em;
+    font-weight: 300;
+  }
+
+}
+.SiteFooter-brand {
+  color: #2d9ec5;
+  padding: 16px 20px;
+  overflow: auto;
+  .Logo--siteFooter {
+    color: #2d9ec5;
+    display: inline-block;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.125em;
+    float: right;
+    img {
+      max-width: 7.8125em;
+    }
+  }
+}
