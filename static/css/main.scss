@@ -45,20 +45,17 @@ ol, ul, li {
 }
 
 .SiteHead {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: stretch;
-  justify-content: space-between;
   background-color: #fff;
+  display: block;
+  margin: 0 auto;
   overflow: hidden;
-
   &-brand {
     margin: 25px;
   }
   .Logo {
     &--siteHead {
       display: block;
+      text-align: center;
     }
     &-graphic {
       max-width: 125px;
@@ -111,6 +108,13 @@ ol, ul, li {
   }
   ol, ul, li {
     padding: auto;
+  }
+  .SiteHead {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-between;
   }
   .Paper {
     &-body {
