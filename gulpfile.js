@@ -14,7 +14,7 @@ var gulp              =   require('gulp'),
       }
     };
 
-gulp.task('styles', function () {
+gulp.task('default', function () {
   return gulp.src(paths.cssPaths.src)
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
@@ -26,5 +26,3 @@ gulp.task('styles', function () {
     .pipe(sourcemaps.write('/maps'))
     .pipe(gulp.dest(paths.cssPaths.dest));
 });
-
-gulp.task('default', ['styles']);
