@@ -34,9 +34,11 @@ h2, h3 {
 p {
   margin-bottom: 16px;
 }
-ol, ul, li {
+ol, ul {
   padding: 0;
-  list-style-position: inside;
+ li  {
+   list-style-position: inside;
+ }
 }
 
 .ContentBody {
@@ -106,9 +108,14 @@ ol, ul, li {
   html, body {
     line-height: 1.5;
   }
-  ol, ul, li {
-    padding: auto;
+  
+  ol, ul {
+    padding: 0 0 0 40px;
+    li {
+      list-style-position: outside;
+    }
   }
+
   .SiteHead {
     display: flex;
     flex-direction: row;
